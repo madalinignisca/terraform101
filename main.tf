@@ -30,6 +30,6 @@ resource "hcloud_server" "terraform101" {
   server_type = "cx11"
   location = "hel1"
   datacenter = "hel1-dc2"
-  ssh_keys = [ "default" ]
+  ssh_keys = [ hcloud_ssh_key.default ]
   keep_disk = true
 }
