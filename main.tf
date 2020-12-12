@@ -31,4 +31,5 @@ resource "hcloud_server" "terraform101" {
   location = "hel1"
   datacenter = "hel1-dc2"
   ssh_keys = [ "default" ]
+  keep_disk = true
 }
